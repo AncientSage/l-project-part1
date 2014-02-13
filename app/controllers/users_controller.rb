@@ -14,24 +14,24 @@ class UsersController < ApplicationController
     def login
         result = Users.login(params[:user],params[:password])
         if result < 0
-            render json: {errCode: result}, status: 200
+            render json: {errCode: result}
         else
-            render json: {errCode: $SUCCESS, count:result}, status: 200
+            render json: {errCode: $SUCCESS, count:result}
         end
     end
 
     def add
         result = Users.add(params[:user],params[:password])
         if result < 0
-            render json: {errCode: result}, status: 200
+            render json: {errCode: result}
         else
-            render json: {errCode: $SUCCESS, count:result}, status: 200
+            render json: {errCode: $SUCCESS, count:result}
         end
     end
 
     def resetFixture
         result = Users.TESTAPI_resetFixture
-        render json: {errCode: result}, status: 200
+        render json: {errCode: result}
     end
     
     def unitTests
