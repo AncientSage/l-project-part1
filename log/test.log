@@ -1,0 +1,179 @@
+  [1m[36m (52.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (9.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (8.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (9.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140213054016')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Unable to load user, underlying cause No such file to load -- user 
+
+ /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `require'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `block in require'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:214:in `load_dependency'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `require'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:330:in `require_or_load'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:289:in `depend_on'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:207:in `require_dependency'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.2/lib/active_record/fixtures.rb:773:in `try_to_load_dependency'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.2/lib/active_record/fixtures.rb:792:in `block in require_fixture_classes'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.2/lib/active_record/fixtures.rb:790:in `each'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.2/lib/active_record/fixtures.rb:790:in `require_fixture_classes'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.2/lib/active_record/fixtures.rb:768:in `fixtures'
+/home/saasbook/warmup/test/test_helper.rb:12:in `<class:TestCase>'
+/home/saasbook/warmup/test/test_helper.rb:5:in `<top (required)>'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `require'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `block in require'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:214:in `load_dependency'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `require'
+/home/saasbook/warmup/test/helpers/users_helper_test.rb:1:in `<top (required)>'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `require'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `block in require'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:214:in `load_dependency'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `require'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.2/lib/rails/test_unit/sub_test_task.rb:73:in `block (3 levels) in define'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.2/lib/rails/test_unit/sub_test_task.rb:73:in `each'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.2/lib/rails/test_unit/sub_test_task.rb:73:in `block (2 levels) in define'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.2/lib/rails/test_unit/sub_test_task.rb:72:in `each'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.2/lib/rails/test_unit/sub_test_task.rb:72:in `block in define'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:236:in `call'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:236:in `block in execute'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:231:in `each'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:231:in `execute'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:175:in `block in invoke_with_call_chain'
+/home/saasbook/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:168:in `invoke_with_call_chain'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:197:in `block in invoke_prerequisites'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:195:in `each'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:195:in `invoke_prerequisites'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:174:in `block in invoke_with_call_chain'
+/home/saasbook/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:168:in `invoke_with_call_chain'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:161:in `invoke'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.2/lib/rails/test_unit/testing.rake:61:in `block in <top (required)>'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:236:in `call'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:236:in `block in execute'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:231:in `each'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:231:in `execute'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:175:in `block in invoke_with_call_chain'
+/home/saasbook/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:168:in `invoke_with_call_chain'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/task.rb:161:in `invoke'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/application.rb:149:in `invoke_task'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/application.rb:106:in `block (2 levels) in top_level'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/application.rb:106:in `each'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/application.rb:106:in `block in top_level'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/application.rb:115:in `run_with_threads'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/application.rb:100:in `top_level'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/application.rb:78:in `block in run'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/application.rb:165:in `standard_exception_handling'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/lib/rake/application.rb:75:in `run'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/gems/rake-10.1.1/bin/rake:33:in `<top (required)>'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/bin/rake:23:in `load'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247@global/bin/rake:23:in `<main>'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/bin/ruby_executable_hooks:15:in `eval'
+/home/saasbook/.rvm/gems/ruby-2.0.0-p247/bin/ruby_executable_hooks:15:in `<main>'
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("username", "password", "count") VALUES ('MyString', 'MyString', 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("username", "password", "count") VALUES ('MyString', 'MyString', 1)[0m
+  [1m[35m (27.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------
+UsersControllerTest: test_should_get_home
+-----------------------------------------
+Processing by UsersController#home as HTML
+  Rendered users/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------
+UsersTest: test_add_duplicate_user
+----------------------------------
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'test' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("count", "created_at", "password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["count", 1], ["created_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00], ["password", "test"], ["updated_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00], ["username", "test"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'test' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------
+UsersTest: test_adding_new_user
+-------------------------------
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'a' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "users" ("count", "created_at", "password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["count", 1], ["created_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00], ["password", "a"], ["updated_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00], ["username", "a"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------
+UsersTest: test_adding_nil_username_w/_non-nil_password
+-------------------------------------------------------
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mUsers Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------
+UsersTest: test_adding_nil_username_w/_overlimit_password
+---------------------------------------------------------
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mUsers Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+UsersTest: test_adding_non-nil_username_w/_overlimit_password
+-------------------------------------------------------------
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'a' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------------
+UsersTest: test_adding_overlimit_username_w/_non-nil_password
+-------------------------------------------------------------
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsersTest: test_failing_password_w/_correct_username
+----------------------------------------------------
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'a' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("count", "created_at", "password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)  [["count", 1], ["created_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00], ["password", "a"], ["updated_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00], ["username", "a"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'a' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------
+UsersTest: test_failing_password_w/_correct_username_that_is_nil
+----------------------------------------------------------------
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'a' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("count", "created_at", "password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)  [["count", 1], ["created_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00], ["password", "a"], ["updated_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00], ["username", "a"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'a' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------
+UsersTest: test_increase_login_count
+------------------------------------
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'a' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("count", "created_at", "password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)  [["count", 1], ["created_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00], ["password", "a"], ["updated_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00], ["username", "a"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'a' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "count" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["count", 2], ["updated_at", Thu, 13 Feb 2014 10:09:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+UsersTest: test_user_does_not_exist
+-----------------------------------
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'a' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
