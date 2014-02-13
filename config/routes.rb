@@ -55,8 +55,8 @@ Warmup::Application.routes.draw do
   #     resources :products
   #   end
   root "users#home"
-  match 'users/login/' => "users#login" , via: [:get, :post]
-  match 'users/add/' => "users#add", via: [:get, :post]
-  match 'TESTAPI/resetFixture' => "users#resetFixture", via: [:get, :post]
-  match 'TESTAPI/unitTests' => "users#unitTests", via: [:get, :post]
+  match 'users/login/', to: "users#login" , via: 'post'
+  match 'users/add/', to: "users#add", via: 'post'
+  match 'TESTAPI/resetFixture', to: "users#resetFixture", via: 'post'
+  match 'TESTAPI/unitTests', to: "users#unitTests", via: 'post'
 end
